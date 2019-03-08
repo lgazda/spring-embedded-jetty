@@ -3,7 +3,7 @@ spring mvc + embedded jetty as a spring bean
 
 # main note
 
-jetty on it's init -> init servlet -> spring dispatcher servlet (has web context) -> dispatcher servlet on it's init sets the servlet context in web context and refreshes the web context
+jetty on init -> inits servlet -> spring dispatcher servlet (already has web context) -> dispatcher servlet on init sets the servlet context in web context and refreshes the web context
 
 `org.springframework.web.servlet.FrameworkServlet#configureAndRefreshWebApplicationContext`
 ```java
